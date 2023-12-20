@@ -54,3 +54,7 @@ async function mainRun() {
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.msg == "startFunc") mainRun();
 });
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  if (request.msg == "listFriends") mainRun();
+});
